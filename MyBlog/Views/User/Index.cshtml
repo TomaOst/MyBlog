@@ -1,0 +1,36 @@
+﻿@{
+    Layout = "~/Views/Layout.cshtml";
+}
+
+@section style {
+    <link rel="stylesheet" type="text/css" href="~/Content/User.css">
+}
+
+<div id="user-info-block">
+    <h3><b>Tamara Gorobets (you)</b></h3>
+    <div id="avatar-block">
+        <img src="~/Content/Avatar.jpg" />
+    </div>
+    <div id="personal-info-block">
+        <p>Birthday: 23.10.1989</p>
+        <p>Sex: Female</p>
+        <p>Country: Russia</p>
+        <p>City: Taganrog</p>
+    </div>
+    <div id="contacts-block">
+        <p>E-mail: osttam89@gmail.com</p>
+        <p>Skype: tomik-gnomik89</p>
+        <p>ICQ: 414480557</p>
+        <p>Phone: +79054287118</p>
+    </div>
+</div>
+<h3>+ <a href="/">New post...</a></h3>
+@for (int i = 0; i < 4; i++)
+{
+    <div class="post-block">
+        <a href="/Post?id=1"><h3>Hello</h3></a>
+        <span class="post-date">14.01.2013 6:45</span>
+        <p class="post-content">My name is Tamara. Let me speak from my heart. hgcghdchdcfhcfrhvdcrghtyvtuhthtuhtuuhyujujyujyujyugjyugjybjyubjujyubjjyjyujyubjsdhflsdhfklsdhfksdhfklsdfklsdhkfhsdklfhklsdfklsdhf</p>
+        <span class="post-comments">15 comments</span>
+    </div>
+}

@@ -1,0 +1,35 @@
+﻿@{
+    Layout = "~/Views/Layout.cshtml";
+}
+
+@section style {
+    <link rel="stylesheet" type="text/css" href="~/Content/Post.css">
+}
+
+<div id="post-block">
+    <h1>Hello</h1>
+    <a href="/">
+        <h3>Tamara Gorobets</h3>
+    </a>
+    <span id="post-date">14.01.2013 6:45</span>
+    <p id="post-content">My name is Tamara. Let me speak from my heart. hgcghdchdcfhcfrhvdcrghtyvtuhthtuhtuuhyujujyujyujyugjyugjybjyubjujyubjjyjyujyubjsdhflsdhfklsdhfksdhfklsdfklsdhkfhsdklfhklsdfklsdhf</p>
+    <span id="post-comments">15 comments</span>
+</div>
+
+@for (int i = 0; i < 3; i++)
+{
+    <div class="comment-block">
+        <a href="/">
+            <h4>Kirill Gorobets</h4>
+        </a>
+        <span class="comment-date">14.01.2013 7:45</span>
+        <p class="comment-content">I love you.</p>
+    </div>
+}
+<div id="new-comment-block">
+<textarea>New comment here...</textarea>
+<h4><a href="/">Comment</a></h4>
+</div>
+
+
+

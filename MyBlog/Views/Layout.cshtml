@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="~/Content/Style.css">
+    @RenderSection("style", false)
+    <title>Layout</title>
+</head>
+<body>
+    <header>
+        <img src="~/Content/Logo.png" />
+        <div id="login-block">
+            <p>Tamara Gorobets</p>
+            <p><a href="/">Log out</a></p>
+        </div>
+        <div id="menu-block">
+            <a href="/">My Page</a>
+            <a href="/">Friends</a>
+            <a href="/">News</a>
+            <a href="/">Settings</a>
+        </div>
+    </header>
+    <div id="content-block">
+        @RenderBody()
+    </div>
+</body>
+</html>

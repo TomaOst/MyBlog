@@ -1,0 +1,58 @@
+﻿#post-block {
+    position: relative;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 40px;
+}
+
+#post-content, .comment-content {
+    word-break: break-all;
+}
+
+#post-date, .comment-date {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    color: #666;
+    font-size: smaller;
+}
+
+#post-comments {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    color: #666;
+    font-size: smaller;
+}
+
+.comment-block {
+    font-style: italic;
+    font-size: smaller;
+    margin-left: 100px;
+    position: relative;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    border-top-style: dotted;
+    border-top-width: 1px;
+    border-top-color: #b1b1b1;
+}
+
+#new-comment-block {
+    padding-right: 70px;
+    text-align: right;
+}
+
+#new-comment-block textarea {
+    margin-top: 30px;
+    height:100px;
+    width: 86%;
+    resize: none;
+    min-width: 25%;
+    
+}
+
+#new-comment-block h4 {
+    margin-top: 5px;
+}
+    

@@ -1,0 +1,56 @@
+﻿body {
+    min-width: 600px;
+    margin: 10px;
+    background-color: #e0e0e0;
+    font-family: Calibri;
+}
+
+a {
+    color: #000000;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: Cambria;
+}
+
+header, #content-block {
+    background-color: #ffffff;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #b1b1b1;
+}
+
+header {
+    padding-bottom: 10px;
+}
+
+#login-block {
+    float: right;
+    margin-right: 10px;
+    padding-left: 10px;
+}
+
+#login-block p {
+    text-align: right;
+}
+
+#menu-block a {
+    margin-left: 20px;
+    margin-right: 20px;
+    }
+
+#menu-block {
+    padding-top: 5px;
+    margin-top: 5px;
+    border-top-style: dotted;
+    border-top-width: 1px;
+    border-top-color: #d5d5d5;
+}
+
+#content-block {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 10px;
+}
+
+

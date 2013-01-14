@@ -1,0 +1,59 @@
+﻿#user-info-block {
+    height: 220px;
+}
+
+#avatar-block {
+    float: left;
+    width: 150px;
+    height: 150px;
+}
+
+#avatar-block img {
+    padding: 3px;
+    max-width: 100%;
+    max-height: 100%;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #b1b1b1;
+}
+
+#personal-info-block {
+    float: left;
+    margin-right: 40px;
+}
+
+#contacts-block {
+    float: left;
+    padding-left: 40px;
+    border-left-style: dotted;
+    border-left-width: 1px;
+    border-left-color: #b1b1b1;
+}
+
+.post-block {
+    position: relative;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    border-top-style: dotted;
+    border-top-width: 1px;
+    border-top-color: #b1b1b1;
+}
+
+.post-content {
+    word-break: break-all;
+}
+
+.post-date {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+
+.post-comments {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+}
+
+
+
