@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using MyBlog.Data;
 
 namespace MyBlog.Controllers
 {
@@ -10,7 +11,11 @@ namespace MyBlog.Controllers
     {
         public ActionResult Index()
         {
-            return Redirect("/User");
+            using (var c = new MyBlogEntities())
+            {
+                
+            }
+            return Redirect("/Login");
         }
     }
 }
