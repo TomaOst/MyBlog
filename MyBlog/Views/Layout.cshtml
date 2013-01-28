@@ -10,8 +10,11 @@
     <header>
         <img src="~/Content/Logo.png" />
         <div id="login-block">
-            <p>Tamara Gorobets</p>
-            <p><a href="/">Log out</a></p>
+            @if (Request.Cookies["UserName"] != null)
+            {
+                <p>@Request.Cookies["UserName"].Value</p>
+                <p><a href="/">Log out</a></p>
+            }
         </div>
         <div id="menu-block">
             <a href="/">My Page</a>

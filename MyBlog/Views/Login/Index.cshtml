@@ -1,0 +1,52 @@
+﻿@{  
+    Layout = "~/Views/Layout.cshtml";
+}
+
+@section style {
+    <link rel="stylesheet" type="text/css" href="~/Content/Login.css">
+}
+
+<div id="log-in-block">
+    <h2>Log in.</h2>
+
+    <form action="/Login/Login" method="post">
+
+        <label for="email">E-mail:</label>
+        <input class="field" name="email" type="text" />
+
+        <label for="password">Password:</label>
+        <input class="field" name="password" type="password" />
+
+        <input class="button" type="submit" value="Log in" />
+
+        <input id="remember" type="checkbox" name="remember" />
+    </form>
+
+    <label for="remember" id="checkbox-label">Remember me</label>
+</div>
+
+
+<div id="registration-block">
+    <h2>Registration.</h2>
+
+    <form action="/Login/AddNewUser" method="post">
+        <label for="name">Name:</label>
+        <input class="field" name="name" type="text" />
+
+        <label for="email">E-mail:</label>
+        <input class="field" name="email" type="text" />
+
+        <label for="password">Password:</label>
+        <input class="field" name="password" type="password" />
+
+        <label for="confirm">Confirm password:</label>
+        <input class="field" name="confirm" type="password" />
+
+        <input class="button" type="submit" value="Register" />
+    </form>
+</div>
+
+<div id="message">
+    <span class="message">@ViewBag.LoginMessage</span>
+</div>
+

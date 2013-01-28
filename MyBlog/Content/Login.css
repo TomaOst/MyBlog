@@ -1,0 +1,62 @@
+﻿#content-block {
+    min-height: 500px;
+}
+
+#log-in-block, #registration-block {
+    padding: 20px;
+    position: absolute;
+    width: 25%;
+    min-width: 240px;
+}
+
+#log-in-block {
+
+    float: left; 
+    left: 50px;
+}
+
+#registration-block {
+    right: 50px;
+}
+
+.field {
+    margin-bottom: 10px;
+    height: 20px;
+    width: 100%;
+}
+
+.button {
+    margin-top: 10px;
+    margin-left: 10px;
+    float: right;
+    height: 30px;
+    width: 82px;
+}
+
+#remember {
+    margin-top: 10px;
+}
+
+#checkbox-label {
+    position: absolute;
+    top: 205px;
+    left: 60px;
+}
+
+.message {
+    color: #f00;
+    font-size: larger;
+}
+
+#message {
+    position: absolute ;
+    margin-left: 40%;
+    margin-top: 400px;
+    min-width: 50%;
+}
+
+
+
+
+
+

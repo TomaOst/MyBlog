@@ -1,4 +1,5 @@
-﻿@{
+﻿@model MyBlog.Models.UserInfo
+@{
     Layout = "~/Views/Layout.cshtml";
 }
 
@@ -7,22 +8,28 @@
 }
 
 <div id="user-info-block">
-    <h3><b>Tamara Gorobets (you)</b></h3>
+   @if (Request.Cookies["UserName"] != null)
+        { 
+            <h3><b>@Request.Cookies["UserName"].Value (you)</b></h3>
+        }
     <div id="avatar-block">
         <img src="~/Content/Avatar.jpg" />
     </div>
-    <div id="personal-info-block">
-        <p>Birthday: 23.10.1989</p>
-        <p>Sex: Female</p>
-        <p>Country: Russia</p>
-        <p>City: Taganrog</p>
-    </div>
-    <div id="contacts-block">
-        <p>E-mail: osttam89@gmail.com</p>
-        <p>Skype: tomik-gnomik89</p>
-        <p>ICQ: 414480557</p>
-        <p>Phone: +79054287118</p>
-    </div>
+    @if(Model != null) 
+    {
+        <div id="personal-info-block">
+            <p>Birthday:</p>
+            <p>Sex: @Model.Sex</p>
+            <p>Country: @Model.Country</p>
+            <p>City: @Model.City</p>
+        </div>
+        <div id="contacts-block">
+            <p>E-mail: @Model.Email</p>
+            <p>Skype: @Model.Skype</p>
+            <p>ICQ: @Model.Icq</p>
+            <p>Phone: @Model.Phone</p>
+        </div>
+    }
 </div>
 <h3>+ <a href="/">New post...</a></h3>
 @for (int i = 0; i < 4; i++)
